@@ -218,10 +218,8 @@ class Game:
             self.time = 0
             self.point = 0
             self.old_point = 0
-            self.rone[0] -= 50
-            self.rone[2] -= 50
-            self.rtwo[0] -= 50
-            self.rtwo[2] -= 50
+            self.rone = [WIDTH / 4, 0, WIDTH / 4, 800]
+            self.rtwo = [WIDTH - (WIDTH / 4), 0, WIDTH - (WIDTH / 4), 800]
             game = "bus"
             self.RUN = True
             self.run()
